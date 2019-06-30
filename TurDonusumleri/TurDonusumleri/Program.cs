@@ -98,19 +98,90 @@ namespace TurDonusumleri
 
 
 
-            Console.Write("Adınızı Giriniz: ");
-            string alınanMetin = Console.ReadLine();
+            //Console.Write("Adınızı Giriniz: ");
+            //string alınanMetin = Console.ReadLine();
 
             //int yas = Convert.ToInt32(alınanMetin);
 
 
-            Console.WriteLine("Kullanıcının Adı: " + alınanMetin);
-            
+            //Console.WriteLine("Kullanıcının Adı: " + alınanMetin);
 
+
+            //int sayi = 256;
+            //byte byteSayi;
+
+            //checked
+            //{
+            //    //byteSayi = (byte)sayi;
+            //    unchecked
+            //    {
+            //        byteSayi = (byte)sayi;
+            //    }
+            //}
+
+            //Console.WriteLine(byteSayi);
+
+
+
+
+            //// Boxing
+            //int kucukTur = 55;
+            //string masa = "Masa";
+            //object buyukTur = kucukTur; //Bilinçsiz.
+
+            //buyukTur = (object) kucukTur; // Bilinçli
+
+
+
+            //// Unboxing
+
+            //int kucukTur2 = (int)buyukTur;
+
+            //float fSayi1 = 45.99F;
+
+            //object oSayi = fSayi1;
+
+            //float fSayi2 = (float)oSayi;
+
+
+            //Console.WriteLine(fSayi2);
+
+
+
+
+
+            //short sayi55 = 987;
+
+            //string str55 = sayi55.ToString();
+            ////string str55 = "987";
+
+            ////Console.WriteLine(str55);
+
+            //// string -> int dönşümü yapıldı.
+
+            ////int str66 = Convert.ToInt32(str55);
+            //int str66 = int.Parse(str55);
+
+            //double dSayi = 56.5D;
+            ////string strSayi = dSayi.ToString();
+            //string strSayi = Convert.ToString(dSayi);
+
+
+
+            /* Klavyeden girilen 2 Sayının Toplamını EKrana Yazdıran Program.*/
+            Console.Write("1. Sayıyı Giriniz: ");
+            string s1Str = Console.ReadLine();
+            Console.Write("2. Sayıyı Giriniz: ");
+            string s2Str = Console.ReadLine();
+
+            // Tür Dönüşümleri.
+
+            int s1 = int.Parse(s1Str);
+            int s2 = Convert.ToInt32(s2Str);
+
+            Console.WriteLine("Girilen Sayıların Toplamı: " + (s1+s2));
 
             Console.Read();
-
-            
 
         }
     }
