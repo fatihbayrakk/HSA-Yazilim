@@ -169,17 +169,48 @@ namespace TurDonusumleri
 
 
             /* Klavyeden girilen 2 Sayının Toplamını EKrana Yazdıran Program.*/
+            //Console.Write("1. Sayıyı Giriniz: ");
+            //string s1Str = Console.ReadLine();
+            //Console.Write("2. Sayıyı Giriniz: ");
+            //string s2Str = Console.ReadLine();
+
+            //// Tür Dönüşümleri.
+            //int s1 = int.Parse(s1Str);
+            //int s2 = Convert.ToInt32(s2Str);
+
+            //Console.WriteLine("Girilen Sayıların Toplamı: " + (s1+s2));
+
+            // Klavyeden girilen 4 sayının ortalamasını
+            // bulan programı yazınız.
+
+            string s1Str, s2Str, s3Str, s4Str;
+            int s1, s2, s3, s4,toplam;
+            float ortalama;
+
             Console.Write("1. Sayıyı Giriniz: ");
-            string s1Str = Console.ReadLine();
+            s1Str = Console.ReadLine();
+            s1 = Convert.ToInt32(s1Str);
+
             Console.Write("2. Sayıyı Giriniz: ");
-            string s2Str = Console.ReadLine();
+            s2Str = Console.ReadLine();
+            s2 = Convert.ToInt32(s2Str);
 
-            // Tür Dönüşümleri.
+            Console.Write("3. Sayıyı Giriniz: ");
+            s3Str = Console.ReadLine();
+            s3 = Convert.ToInt32(s3Str);
 
-            int s1 = int.Parse(s1Str);
-            int s2 = Convert.ToInt32(s2Str);
+            Console.Write("4. Sayıyı Giriniz: ");
+            s4Str = Console.ReadLine();
+            s4 = Convert.ToInt32(s4Str);
 
-            Console.WriteLine("Girilen Sayıların Toplamı: " + (s1+s2));
+            toplam = s1 + s2 + s3 + s4;
+            ortalama =(float) toplam / 4;
+            Console.WriteLine("Girilen Sayıların Toplamı: "+toplam+", Ortalaması: "+ortalama);
+            Console.WriteLine("Girilen Sayıların Toplamı: {0}, Ortalaması: {1}",toplam,ortalama);
+            Console.WriteLine($"Girilen Sayıların Toplamı: {toplam}, Ortalaması: {ortalama}");
+
+
+
 
             Console.Read();
 
